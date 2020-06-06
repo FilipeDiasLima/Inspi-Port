@@ -30,11 +30,9 @@ class SessionController {
     console.log(user.id);
     
     return res.json({
-      user: {
         id,
         name,
         email,
-      }
     });
   }
 }
