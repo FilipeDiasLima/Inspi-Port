@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.main {
+  display: flex;
+}
+
+.leftBar {
+  display: flex;
+  justify-content: center;
+  top: 65px;
+  width: 421px;
+  height: 100vh;
+  left: 0px;
+  position: fixed;
+  background: #ffffff;
+}
+
+.leftBar form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.leftBar h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #192149;
+  margin-bottom: 100px;
+  margin-top: 68px;
+}
+
+.leftBar input{
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2.4px solid #192149;
+  padding: 10px 18px;
+
+  width: 321px;
+  height: 46px;
+  margin-bottom: 34px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.leftBar .addbuttom {
+  background: linear-gradient(90deg, #2B3464 4.73%, #4D5788 100%);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+
+  width: 249px;
+  height: 58px;
+
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  color: #fff;
+
+  border-style: none;
+
+  transition: transform 0.1s;
+}
+
+.leftBar .addbuttom:hover {
+  background: linear-gradient(90deg, rgb(62, 72, 129) 4.73%, rgb(105, 120, 197) 100%);
+}
+
+.leftBar .addbuttom:active {
+  transform: translateY(4px);
+}
+
+.boxPost {
+  display: flex;
+  margin-left: 497px;
+  margin-top: 131px;
+
+  width: 1347px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.boxPost h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  color: #192149;
+
+  margin-left: 67px;
+  margin-top: 88px;
+  margin-bottom: 96px;
+}
+
+.boxPost .details {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column wrap;
+
+  width: 1000px;
+  height: 278px;
+  margin-left: 63px;
+  margin-bottom: 53px; 
+  
+  padding: 10px 30px;
+  background: #CDCDCD;
+  border-radius: 5px;
+}
+
+
+.boxPost .details .titleBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 400px;
+  height: 63px;
+  margin-top: 9px;
+  margin-left: 140px;
+
+  background: #23242F;
+  border-radius: 5px;
+  border: none;
+}
+
+.boxPost .details .titleBox p {
+  padding: 20px 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #FFFFFF;
+}
+
+.boxPost .details .urlBox {
+  display: flex;
+  align-items: center;
+
+  width: 691px;
+  height: 63px;
+  
+  background: #23242F;
+  border-radius: 5px;
+  border: none;
+  overflow: hidden;
+
+}
+
+.boxPost .details .urlBox p {
+  padding: 20px 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #FFFFFF;
+}
+
+.boxPost .details .techsBox {
+  display: flex;
+  align-items: center;
+  
+  width: 691px;
+  height: 63px;
+
+  background: #23242F;
+  border-radius: 5px;
+  border: none;
+}
+
+.boxPost .details .techsBox p {
+  padding: 20px 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  color: #FFFFFF;
+}
+
+.boxPost .details .delete {
+  display: flex;
+  margin-top: 70px;
+}
+
+.boxPost .details .p {
+  margin-top: 190px;
+  font-size: 20px;
+  color: #192149;
+}

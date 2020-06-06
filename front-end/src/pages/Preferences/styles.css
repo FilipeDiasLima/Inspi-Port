@@ -1,0 +1,88 @@
+.boxForm {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 300px;
+  top: 95px;
+  background-color: #ffffff;
+  width: 1320px;
+  height: 850px;
+  border-radius: 5px;
+}
+
+.boxForm form {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column wrap;
+}
+
+.boxForm form h2 {
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  color: #192149;
+  margin-left: 185px;
+  margin-top: 14px;
+}
+
+.boxForm form label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  color: #192149;
+  margin-left: 144px;
+  margin-bottom: -60px;
+}
+
+.boxForm form input {
+  width: 359px;
+  height: 45px;
+  border: 3px solid #192149;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-left: 144px;
+  font-size: 18px;
+  padding: 0px 10px;
+  margin-top: -70px;
+  margin-bottom: -70px;
+}
+
+.boxForm form button {
+  width: 359px;
+  height: 66px;
+  
+  background: linear-gradient(90deg, #2B3464 4.73%, #4D5788 100%);
+  border-radius: 10px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 31px;
+  color: #ffffff;
+
+  margin-left: 144px;
+  margin-top: 60px;
+}
+
+.boxForm form button:hover {
+  background: linear-gradient(90deg, rgb(62, 72, 129) 4.73%, rgb(105, 120, 197) 100%);
+}
+
+.boxForm form button:active {
+  transform: translateY(4px);
+}
+
+.boxForm h1 {
+  display: flex;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  color: #192149;
+
+  margin-top: 365px;
+  margin-left: 105px;
+}

@@ -1,0 +1,56 @@
+.login-container section.form form h3{
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  color: #192149;
+  margin-top: -79px;
+  margin-bottom: 40px;
+  margin-left: 115px;
+}
+
+.login-container section.form button.login{
+  padding: 20px 75px;
+  border: none;
+
+  background: #DCDCDC;
+  margin-left: 38px;
+  margin-top: 117px;
+  margin-right: -33px;
+
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  color: #30313D;
+  font-size: 19px;
+  
+  transition: background 0.3s,transform 0.1s;
+}
+
+.login-container section.form button.register{
+  padding: 20px 75px;
+  border: none;
+
+  background: #DCDCDC;
+  margin-left: 38px;
+  margin-top: 117px;
+  margin-right: -33px;
+
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  color: #30313D;
+  font-size: 19px;
+  
+  transition: background 0.3s,transform 0.1s;
+}
+
+.login-container section.form button[type=button]:hover{
+  background: rgb(182, 182, 182);
+}
+
+.login-container section.form button[type=button]:active {
+  background-color: rgb(74, 86, 165);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
