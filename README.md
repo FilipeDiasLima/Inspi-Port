@@ -9,11 +9,32 @@
  publicações de repositórios. Cada repositório salvo/adicionado poderá receber "like" do usuário, como uma parte de sua
  funcionalidade.
  
- ### Tecnologias
+ ### Tecnologias e Ferramentas
  * [Node.js](https://nodejs.org/en/)
  * [ReactJS](https://pt-br.reactjs.org)
+ * [Insomnia](https://insomnia.rest/download/)
+ * [PostgresSQL](https://www.postgresql.org)
+ * [Postbird](https://www.electronjs.org/apps/postbird)
+ * [Docker](https://www.docker.com/get-started) 
  
- ### :file_folder: Explicação do desenvolvimento
+ ### :computer_mouse:	Como rodar a aplicação
+ - Após clonar o repositório e abra-o em um editor de sua preferência
+ - Abra o terminal e rode **yarn**, para fazer as instalações das bibliotecas usadas(que podem ser conferidas no arquivo **package.json**)
+ - Após a instalação, rode **yarn dev** para inicializar a execução do projeto
+ - Agora, como foi usado um banco de dados relacional, 
+   - **caso não tenha tenha as migrations pasta database**, rode o comando 
+ ``` yarn sequelize migration:create --name=create-users ``` e ``` yarn sequelize migration:create --name=create-repositories ``` 
+   - **caso ja tenha as migrations apenas rode** ```yarn sequelize db:migrate ```
+   - assim será criado as migrations do programa e estarão prontas pra serem usadas;
+ - **Para vizualição do banco de dados**
+   - Para criação da **imagem** do banco de dados (**PostgresSQL**) foi usado o **Docker** e uma forma mais simples de acessar essas imagens de uma forma mais legível é o **Postbird**
+   - A imagem é criada pelo comando ```docker run --name database -e POSTGRES_PASSWORD-docker -p 5433:5432 -d postgres:11```
+   - e executada, caso não esteja, pelo comando ```docker start database```, o comando ```docker ps``` serve para você vizualizar as imagens que estão rodando
+   - Abrindo o Postbird você preencha os campos de acordo com o arquivo **src/config/database.js** e entre
+   - nele você poderá criar a database, com a imagem já feita e ter acesso a toda a database, criação, edição e remoção
+    <h4 align="center"> <img src="assets/postbird.png" width="600" height="350"></img> </h4>
+ 
+ ### :file_folder: Back-end
  - Todo o projeto foi separado em pastas para organização;
  - Pasta **"app"** se encontra os códigos que tratarão de regras de negócio ou lógica: **controllers da aplicação** e **models** ;
     - **Controllers**: Feature de criação/registro;
@@ -26,9 +47,15 @@
  - As funcionalidades das rotas estão dentro de Controllers, sendo assim o arquivo **"routes.js"** contém apenas as rotas de acesso;
  - O arquivo **.sequelizerc** faz a exportação dos caminhos ate pastas como config de database, migrations, models...;
  
- ### :desktop_computer:	 Layout da aplicação 
- Para vizualizar o design das telas no **Figma** [clique aqui](https://www.figma.com/file/bEQ5N5CYhMZ9S3o7SCSgGF/DesafioCOLTECH?node-id=0%3A1)
+ ### :computer:	Front-end
+- Dentro da pasta **"pages"** estão as telas das aplicações com a estrutura, ações e estilização
+  - **"Logon"**, **"Register"**, **"Repositories"** e **"Preferecies"**
+- **"services"** está a conexao do front-end com o back-end através do **axois** e do **cors**(para permitir que o código do back-end seja acessador por outros)
+- As funcionalidades pedidas do front-end estão todas feitas
+  - **Add repository**, **Remove repository** e **Exibição dos repositórios**
  
+ ### :desktop_computer:	 Layout da aplicação 
+ Para vizualizar o design das telas no **Figma** [clique aqui](https://www.figma.com/file/UpWgJVEJb0akKK7fsQbARk/DesafioCOLTECH?node-id=0%3A1)
  #### Login
  <h4 align="center"> <img src="assets/login.png" width="600" height="350"></img> </h4>
  
@@ -36,7 +63,8 @@
  <h4 align="center"> <img src="assets/register.png" width="600" height="350"></img> </h4>
  
  #### Home
- <h4 align="center"> <img src="assets/home.png" width="700" height="550"></img> </h4>
+ <h4 align="center"> <img src="assets/home.png" width="700" height="450"></img> </h4>
  
  #### Edit repository
  <h4 align="center"> <img src="assets/editRepository.png" width="600" height="350"></img> </h4>
+
