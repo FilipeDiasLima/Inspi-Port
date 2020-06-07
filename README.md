@@ -15,20 +15,14 @@
  
  ### :file_folder: Explicação do desenvolvimento
  - Todo o projeto foi separado em pastas para organização;
- - Pasta **"app"** se encontra os códigos que tratarão de regras de negócio ou lógica: **controllers da aplicação**, **models** 
- e **middlewares**;
+ - Pasta **"app"** se encontra os códigos que tratarão de regras de negócio ou lógica: **controllers da aplicação** e **models** ;
     - **Controllers**: Feature de criação/registro;
-    - **Models**: Manipulação de dados;
-    - **Middlewares**: Controle de acesso, validação de requisição, para que o usuário deva estar logado para determinadas 
-    funcionalidades ;    
- - Pasta **"config"** se encontra configurações de autenticação e do banco de dados;
-    - **auth.js**: armazena o secret(codigo aleatório gerado pelo site [md5online](https://www.md5online.org) para criptografia) e o 
-    tempo de expiração do token que é gerado quando o usuário faz login
+    - **Models**: Manipulação de dados;   
+ - Pasta **"config"** se encontra configurações do banco de dados;
     - **database.js**: Credencias para acesso à base de dados
  -	O projeto desenvolvido utiliza um banco de dados relacional, **Postgres**, utilizando o ORM **Sequelize** para suporte à
  banco de dados;
- - Pasta **"database"** o arquivo **index.js** faz a conexão com o banco de dados e o carregamento dos models, para a aplicação ter
- acesso à esses models;
+ - Pasta **"database"** o arquivo **index.js** faz a conexão com o banco de dados e o carregamento dos models, para que a aplicação tenha acesso à esses models;
  - As funcionalidades das rotas estão dentro de Controllers, sendo assim o arquivo **"routes.js"** contém apenas as rotas de acesso;
  - O arquivo **.sequelizerc** faz a exportação dos caminhos ate pastas como config de database, migrations, models...;
  
