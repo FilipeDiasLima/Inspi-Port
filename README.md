@@ -4,7 +4,7 @@
 
 <br>
  
- ###### A escolha do titulo/nome do projeto de portfólio não tem qualquer relação com a COLTECH, fica como critério do desenvolvedor.
+ <h5 align="center" >A escolha do titulo/nome do projeto de portfólio não tem qualquer relação com a COLTECH, fica como critério do desenvolvedor.</h5>
  
  <br>
  
