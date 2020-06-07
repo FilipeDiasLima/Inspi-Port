@@ -44,10 +44,10 @@
  ``` yarn sequelize migration:create --name=create-users ``` e ``` yarn sequelize migration:create --name=create-repositories ``` 
    - **caso ja tenha as migrations apenas rode** ```yarn sequelize db:migrate ```
    - assim será criado as migrations do programa e estarão prontas pra serem usadas;
- - **Para vizualição do banco de dados**
+ - **Para visualição do banco de dados**
    - Para criação da **imagem** do banco de dados (**PostgresSQL**) foi usado o **Docker** e uma forma mais simples de acessar essas imagens de uma forma mais legível é o **Postbird**
    - A imagem é criada pelo comando ```docker run --name database -e POSTGRES_PASSWORD-docker -p 5433:5432 -d postgres:11```
-   - e executada, caso não esteja, pelo comando ```docker start database```, o comando ```docker ps``` serve para você vizualizar as imagens que estão rodando
+   - e executada, caso não esteja, pelo comando ```docker start database```, o comando ```docker ps``` serve para você visualizar as imagens que estão rodando
    - Abrindo o Postbird você preencha os campos de acordo com o arquivo **src/config/database.js** e entre
    - nele você poderá criar a database, com a imagem já feita e ter acesso a toda a database, criação, edição e remoção
     <h4 align="center"> <img src="assets/postbird.png"></img> </h4>
