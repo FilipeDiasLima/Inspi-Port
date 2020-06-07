@@ -9,7 +9,8 @@
  <br>
  
  <p align="center">
-  <a href="#-resumo-do-projeto">Resumo do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Resumo-do-projeto">Resumo do projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-Tecnologias-e-Ferramentas">Tecnologias e Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
  </p>
  
  
