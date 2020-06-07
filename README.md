@@ -51,7 +51,8 @@
  - As funcionalidades das rotas estão dentro de Controllers, sendo assim o arquivo **"routes.js"** contém apenas as rotas de acesso;
  - O arquivo **.sequelizerc** faz a exportação dos caminhos ate pastas como config de database, migrations, models...
  - Todas as funcionalidades da aplicação podem ser acessadas de uma forma mais visual pelo **Insomnia**
- <h4 align="center"> <img src="assets/login.png" width="600" height="350"></img> </h4>
+ 
+ <h4 align="center"> <img src="assets/insomnia.png"></img> </h4>
  
  ### :computer:	Front-end
 - Dentro da pasta **"pages"** estão as telas das aplicações com a estrutura, ações e estilização
