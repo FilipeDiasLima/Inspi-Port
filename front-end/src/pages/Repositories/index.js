@@ -2,7 +2,7 @@ import React, {useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdSettings } from 'react-icons/io';
-import {MdDelete, MdModeEdit} from 'react-icons/md';
+import {MdDelete} from 'react-icons/md';
 import {AiFillLike} from 'react-icons/ai';
 
 import api from '../../services/api';
@@ -156,10 +156,9 @@ function Repositories(){
           <Link onClick={() => handleDeleteRepo(repository.id)} className="delete">
             <MdDelete size={28} color="#C33B3B"/>
           </Link>
-          <Link to="/preferences" className="edit"><MdModeEdit size={28} color="#192149"/></Link>
-          <Link onClick={() => handleLikes(repository.id)}
-            className="like"><AiFillLike size={28} 
-            color="#192149"/></Link>
+          <button className="like"><Link onClick={() => handleLikes(repository.id)}>
+            <AiFillLike size={28} 
+            color="#192149"/></Link></button>
           <p className="p">{repository.likes}</p>
 
         </div>
