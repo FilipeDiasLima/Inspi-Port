@@ -55,8 +55,6 @@
   - Espere abrir uma aba no seu navegador, caso não abra, mas o programa estiver em execução sem nenhum problema, entao acesse [localhost:3000](http://localhost:3000)
   - E agora pode-se acessar as funcionalidades da aplicação pelo front ou como um cliente
  
- ## lel
- 
  ## :file_folder: Back-end
  - Todo o projeto foi separado em pastas para organização;
  - Pasta **"app"** se encontra os códigos que tratarão de regras de negócio ou lógica: **controllers da aplicação** e **models** ;
