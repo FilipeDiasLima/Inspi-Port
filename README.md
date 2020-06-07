@@ -20,7 +20,7 @@
  ### :computer_mouse:	Como rodar a aplicação
  - Após clonar o repositório e abra-o em um editor de sua preferência
  - Abra o terminal e rode **yarn**, para fazer as instalações das bibliotecas usadas(que podem ser conferidas no arquivo **package.json**)
- - Após a instalação, rode **yarn dev** para inicializar a execução do projeto
+ - Após a instalação, abra o caminho onde se encontra o **back-end** e rode ```yarn dev``` para inicializar a execução do projeto
  - Agora, como foi usado um banco de dados relacional, 
    - **caso não tenha tenha as migrations pasta database**, rode o comando 
  ``` yarn sequelize migration:create --name=create-users ``` e ``` yarn sequelize migration:create --name=create-repositories ``` 
@@ -32,7 +32,10 @@
    - e executada, caso não esteja, pelo comando ```docker start database```, o comando ```docker ps``` serve para você vizualizar as imagens que estão rodando
    - Abrindo o Postbird você preencha os campos de acordo com o arquivo **src/config/database.js** e entre
    - nele você poderá criar a database, com a imagem já feita e ter acesso a toda a database, criação, edição e remoção
-    <h4 align="center"> <img src="assets/postbird.png" width="600" height="350"></img> </h4>
+    <h4 align="center"> <img src="assets/postbird.png"></img> </h4>
+    
+  - Continuado na execução, agora abra o caminho do **front-end** e rode ```yarn start``` para inicializar a execução
+  - Espere abrir uma aba no seu navegador, caso não abra, mas o programa estiver em execução sem nenhum problema, entao acesse [localhost:3000](http://localhost:3000)
  
  ### :file_folder: Back-end
  - Todo o projeto foi separado em pastas para organização;
