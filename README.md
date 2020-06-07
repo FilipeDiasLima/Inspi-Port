@@ -4,12 +4,12 @@
  
  ###### A escolha do titulo/nome do projeto de portfólio não tem qualquer relação com a COLTECH, fica como critério do desenvolvedor.
  
- ## Resumo do projeto
+ ## :page_facing_up:	Resumo do projeto
  Projeto de um Portfólio pessoal para armazenar seus repositórios, com propósito pessoal, ou seja, apenas você verá suas
  publicações de repositórios. Cada repositório salvo/adicionado poderá receber "like" do usuário, como uma parte de sua
  funcionalidade.
  
- ### Tecnologias e Ferramentas
+ ### :iphone:	Tecnologias e Ferramentas
  * [Node.js](https://nodejs.org/en/)
  * [ReactJS](https://pt-br.reactjs.org)
  * [Insomnia](https://insomnia.rest/download/)
