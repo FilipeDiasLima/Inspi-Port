@@ -1,15 +1,19 @@
  <h1 align="center">
   <img src="assets/Inspi-Porti.png" width="308" height="60" ></img>
  </h1>
+
+<br>
  
  ###### A escolha do titulo/nome do projeto de portfólio não tem qualquer relação com a COLTECH, fica como critério do desenvolvedor.
  
- ## :page_facing_up:	Resumo do projeto
+ # :page_facing_up:	resumo do projeto
+ 
  Projeto de um Portfólio pessoal para armazenar seus repositórios, com propósito pessoal, ou seja, apenas você verá suas
  publicações de repositórios. Cada repositório salvo/adicionado poderá receber "like" do usuário, como uma parte de sua
  funcionalidade.
  
- ### :gear:	Tecnologias e Ferramentas
+ ## :gear:	Tecnologias e Ferramentas
+ 
  * [Node.js](https://nodejs.org/en/)
  * [ReactJS](https://pt-br.reactjs.org)
  * [Insomnia](https://insomnia.rest/download/)
@@ -17,7 +21,7 @@
  * [Postbird](https://www.electronjs.org/apps/postbird)
  * [Docker](https://www.docker.com/get-started) 
  
- ### :computer_mouse:	Como rodar a aplicação
+ ## :computer_mouse:	Como rodar a aplicação
  - Após clonar o repositório e abra-o em um editor de sua preferência
  - Abra o terminal e rode **yarn**, para fazer as instalações das bibliotecas usadas(que podem ser conferidas no arquivo **package.json**)
  - Após a instalação, abra o caminho onde se encontra o **back-end** e rode ```yarn dev``` para inicializar a execução do projeto
@@ -38,7 +42,7 @@
   - Espere abrir uma aba no seu navegador, caso não abra, mas o programa estiver em execução sem nenhum problema, entao acesse [localhost:3000](http://localhost:3000)
   - E agora pode-se acessar as funcionalidades da aplicação pelo front ou como um cliente
  
- ### :file_folder: Back-end
+ ## :file_folder: Back-end
  - Todo o projeto foi separado em pastas para organização;
  - Pasta **"app"** se encontra os códigos que tratarão de regras de negócio ou lógica: **controllers da aplicação** e **models** ;
     - **Controllers**: Feature de criação/registro;
@@ -54,24 +58,24 @@
  
  <h4 align="center"> <img src="assets/insomnia.png"></img> </h4>
  
- ### :computer:	Front-end
+ ## :computer:	Front-end
 - Dentro da pasta **"pages"** estão as telas das aplicações com a estrutura, ações e estilização
   - **"Logon"**, **"Register"**, **"Repositories"** e **"Preferecies"**
 - **"services"** está a conexao do front-end com o back-end através do **axois** e do **cors**(para permitir que o código do back-end seja acessador por outros)
 - As funcionalidades pedidas do front-end estão todas feitas
   - **Add repository**, **Remove repository** e **Exibição dos repositórios**
  
- ### :desktop_computer:	 Layout da aplicação 
+ ## :desktop_computer:	 Layout da aplicação 
  Para vizualizar o design das telas no **Figma** [clique aqui](https://www.figma.com/file/UpWgJVEJb0akKK7fsQbARk/DesafioCOLTECH?node-id=0%3A1)
- #### Login
+ ### Login
  <h4> <img src="assets/login.png" width="50%" height="50%"></img> </h4>
  
- #### Register
+ ### Register
  <h4> <img src="assets/register.png" width="50%" height="50%"></img> </h4>
  
- #### Home
+ ### Home
  <h4> <img src="assets/home.png" width="50%" height="50%"></img> </h4>
  
- #### Edit repository
+ ### Edit repository
  <h4> <img src="assets/editRepository.png" width="50%" height="50%"></img> </h4>
 
