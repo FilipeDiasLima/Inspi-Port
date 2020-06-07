@@ -36,6 +36,7 @@
     
   - Continuado na execução, agora abra o caminho do **front-end** e rode ```yarn start``` para inicializar a execução
   - Espere abrir uma aba no seu navegador, caso não abra, mas o programa estiver em execução sem nenhum problema, entao acesse [localhost:3000](http://localhost:3000)
+  - E agora pode-se acessar as funcionalidades da aplicação pelo front ou como um cliente
  
  ### :file_folder: Back-end
  - Todo o projeto foi separado em pastas para organização;
