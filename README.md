@@ -9,7 +9,7 @@
  publicações de repositórios. Cada repositório salvo/adicionado poderá receber "like" do usuário, como uma parte de sua
  funcionalidade.
  
- ### :iphone:	Tecnologias e Ferramentas
+ ### :gear:	Tecnologias e Ferramentas
  * [Node.js](https://nodejs.org/en/)
  * [ReactJS](https://pt-br.reactjs.org)
  * [Insomnia](https://insomnia.rest/download/)
