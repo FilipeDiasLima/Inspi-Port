@@ -17,7 +17,7 @@ function Repositories(){
   const userId = localStorage.getItem('id');
   const userName = localStorage.getItem('name');
 
-  useEffect(() => {
+  function attList(){
     api.get('repositories', {
       headers: {
         Authorization: userId,
@@ -25,6 +25,9 @@ function Repositories(){
     }).then(response => {
       setRepositories(response.data)
     })
+  }
+  useEffect(() => {
+    attList()
   }, [userId]);
 
   // Deletando um repositorio
@@ -43,6 +46,12 @@ function Repositories(){
     }
   }
 
+  function clearField() {
+    setTitle('')
+    setUrl('')
+    setTechs('')
+  }
+ 
   // Adicionar repositorios
 
   const [title, setTitle] = useState('');
@@ -63,6 +72,8 @@ function Repositories(){
       });
 
       setRepositories([...repositories,data]);
+      clearField()
+      attList()
     } catch(err) {
       alert('Error')
     }
@@ -70,7 +81,7 @@ function Repositories(){
 
   //likes
   
-  async function handleLikes(id, count){
+  async function handleLikes(id){
 
     try {
       await api.post(`/repositories/${id}/like`, {
@@ -79,6 +90,7 @@ function Repositories(){
         }
       });
 
+      attList();
     } catch (err) {
       alert('Error');
     }
