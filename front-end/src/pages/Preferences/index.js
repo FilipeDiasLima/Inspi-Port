@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import { FiMenu } from 'react-icons/fi';
 import { IoMdSettings } from 'react-icons/io';
@@ -14,29 +14,22 @@ function Preferences() {
   const [title, setTitle] = useState('');
   const [url, setUrl] = useState('');
   const [techs, setTechs] = useState('');
-  //const [repositories, setRepositories] = useState([]);
-  
+
   const history = useHistory(); 
 
   // Update de um repositorio
 
   async function handleUpdate(id){
-    
-    const data = { title, url, techs };
-    console.log('deu bom');
-    try {
-      await api.put(`repositories/${id}`, data, {
-        headers: {
-          Authorization: userId,
-        }
-      });
 
-      console.log('deu bom');
-      history.push('/repositories');
-      
-    } catch (err) {
-      alert('Error');
-    }
+    const data = {title, url, techs}
+    
+    await api.put(`repositories/${id}`, data, {
+      headers: {
+        Authorization: userId,
+      }
+    });
+
+    history.push('/repositories');
   }
 
   return(
@@ -82,7 +75,7 @@ function Preferences() {
               onChange={e => setTechs(e.target.value)}
             />
 
-            <button type="submit">Save</button>
+            <button>Save</button>
           </form>
 
           <h1>Inspi-Porti</h1>
