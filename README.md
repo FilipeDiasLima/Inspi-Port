@@ -38,5 +38,5 @@
  #### Home
  <h4 align="center"> <img src="assets/home.png" width="700" height="550"></img> </h4>
  
- #### Profile
+ #### Edit repository
  <h4 align="center"> <img src="assets/profile.png" width="600" height="350"></img> </h4>
