@@ -69,10 +69,9 @@ function Repositories(){
   }
 
   //likes
+  
+  async function handleLikes(id, count){
 
-  const [total, setTotal] = useState(0);
-
-  async function handleLikes(id){
     try {
       await api.post(`/repositories/${id}/like`, {
         headers: {
@@ -80,7 +79,6 @@ function Repositories(){
         }
       });
 
-      setTotal([...total]);
     } catch (err) {
       alert('Error');
     }
@@ -143,9 +141,15 @@ function Repositories(){
           <div className="titleBox"><p>{repository.title}</p></div>
           <div className="urlBox"><p>{repository.url}</p></div>
           <div className="techsBox"><p>{repository.techs}</p></div>
-          <Link onClick={() => handleDeleteRepo(repository.id)} className="delete"><MdDelete size={28} color="#C33B3B"/></Link>
+          <Link onClick={() => handleDeleteRepo(repository.id)} className="delete">
+            <MdDelete size={28} color="#C33B3B"/>
+          </Link>
           <Link to="/preferences" className="edit"><MdModeEdit size={28} color="#192149"/></Link>
-          <Link className="like"><AiFillLike size={28} color="#192149"/></Link><p className="p">0</p>
+          <Link onClick={() => handleLikes(repository.id)}
+            className="like"><AiFillLike size={28} 
+            color="#192149"/></Link>
+          <p className="p">{repository.likes}</p>
+
         </div>
         ))}
 
