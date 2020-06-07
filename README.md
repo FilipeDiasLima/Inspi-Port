@@ -64,14 +64,14 @@
  ### :desktop_computer:	 Layout da aplicação 
  Para vizualizar o design das telas no **Figma** [clique aqui](https://www.figma.com/file/UpWgJVEJb0akKK7fsQbARk/DesafioCOLTECH?node-id=0%3A1)
  #### Login
- <h4 align="center"> <img src="assets/login.png" width="600" height="350"></img> </h4>
+ <h4> <img src="assets/login.png" width="50%" height="50%"></img> </h4>
  
  #### Register
- <h4 align="center"> <img src="assets/register.png" width="600" height="350"></img> </h4>
+ <h4> <img src="assets/register.png" width="50%" height="50%"></img> </h4>
  
  #### Home
- <h4 align="center"> <img src="assets/home.png" width="700" height="450"></img> </h4>
+ <h4> <img src="assets/home.png" width="50%" height="50%"></img> </h4>
  
  #### Edit repository
- <h4 align="center"> <img src="assets/editRepository.png" width="600" height="350"></img> </h4>
+ <h4> <img src="assets/editRepository.png" width="50%" height="50%"></img> </h4>
 
