@@ -83,9 +83,9 @@
  Para vizualizar o design das telas no **Figma** [clique aqui](https://www.figma.com/file/UpWgJVEJb0akKK7fsQbARk/DesafioCOLTECH?node-id=0%3A1)
 
 <h1 align="center">
- <img src="assets/login.png" width="400"></img> 
- <img src="assets/register.png" width="400"></img>
- <img src="assets/home.png" width="400"></img>
- <img src="assets/editRepository.png" width="400"></img>
+ <img src="assets/login.png" width="500"></img> 
+ <img src="assets/register.png" width="500"></img>
+ <img src="assets/home.png" width="500"></img>
+ <img src="assets/editRepository.png" width="500"></img>
  </h4>
 
